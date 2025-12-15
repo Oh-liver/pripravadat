@@ -347,7 +347,7 @@ Classification Report:
         <ul>
             <li><strong>Accuracy (Presnosť):</strong> Model dosiahol celkovú presnosť **0.93** (93%).</li>
             <li><strong>Recall pre 'chilled' (1.00):</strong> Model správne identifikoval **100%** všetkých prípadov 'chilled' triedy.</li>
-            <li>**Záver:** KNN s $K=2$ dosiahol veľmi dobrý výsledok na testovacej sade.</li>
+            <li>**Záver:** KNN s K=2 dosiahol veľmi dobrý výsledok na testovacej sade.</li>
         </ul>
     `;
 
@@ -418,7 +418,7 @@ Sea Surface Temp           float64
 dtype: object
         </pre>
         <ul>
-            <li>**Dôležité:** Kód úspešne previedol dátové typy na numerické (`float64`) a dátumové (`datetime64[ns]`).</li>
+            <li>**Dôležité:** Kód úspešne previedol dátové typy na numerické (float64) a dátumové (datetime64[ns]).</li>
         </ul>
     `;
 
@@ -466,8 +466,8 @@ Index(['Date', 'Zonal Winds', 'Meridional Winds', 'Humidity', 'Air Temp', 'Sea S
 ...
         </pre>
         <ul>
-            <li>**Standard Scaling:** Premenná má strednú hodnotu $\mu=0$ a štandardnú odchýlku $\sigma=1$.</li>
-            <li>**Min-Max Scaling:** Premenná je transformovaná do rozsahu $[0, 1]$.</li>
+            <li>**Standard Scaling:** Premenná má strednú hodnotu μ=0 a štandardnú odchýlku σ=1.</li>
+            <li>**Min-Max Scaling:** Premenná je transformovaná do rozsahu [0, 1].</li>
         </ul>
     `;
 
@@ -590,5 +590,10 @@ Name: s_s_temp_3, dtype: int64
 
     codeDisplay10.textContent = pythonCode10.trim();
     outputDisplay10.innerHTML = analysisOutput10.trim();
+
+    // ======================================================================
+    // SPUSTENIE ZVÝRAZŇOVANIA SYNTAXE (PRISM.JS)
+    // ======================================================================
+    Prism.highlightAll();
 
 });
