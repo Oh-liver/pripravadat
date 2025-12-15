@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompletná Dokumentácia Dátovej Analýzy</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
         <p>Model Lineárnej Regresie na predpovedanie platu (Salary) na základe rokov skúseností (YearsExperience).</p>
 
         <h3>Vstupný kód (Python)</h3>
-        <pre id="code-display" class="language-python"></pre>
+        <pre><code id="code-display" class="language-python"></code></pre>
         
         <hr>
 
@@ -30,7 +31,7 @@
         <p>Model predpovedá mieru vražednosti (Murder) na základe štyroch premenných: Illiteracy, Life.Exp, Population a Income.</p>
 
         <h3>Vstupný kód (Python)</h3>
-        <pre id="code-display-2" class="language-python"></pre>
+        <pre><code id="code-display-2" class="language-python"></code></pre>
         
         <hr>
 
@@ -40,13 +41,10 @@
 
     <section class="code-section">
         <h2>3. 🌳 Klasifikácia: Rozhodovací Strom (Decision Tree)</h2>
-        <p>Model slúži na klasifikáciu typu ošetrenia (`Treatment`) na základe koncentrácie CO2 (`conc`), miery absorbcie (`uptake`) a typu rastliny. 
-
-[Image of Decision Tree structure]
-</p>
+        <p>Model slúži na klasifikáciu typu ošetrenia (`Treatment`) na základe koncentrácie CO2 (`conc`), miery absorbcie (`uptake`) a typu rastliny.</p>
 
         <h3>Vstupný kód (Python)</h3>
-        <pre id="code-display-3" class="language-python"></pre>
+        <pre><code id="code-display-3" class="language-python"></code></pre>
         
         <hr>
 
@@ -59,13 +57,10 @@
     
     <section class="code-section">
         <h2>4. 📐 Klasifikácia: Naívny Bayesov Klasifikátor (GaussianNB)</h2>
-        <p>Model klasifikuje typ ošetrenia (`Treatment`) na základe diskretizovaných premenných koncentrácie (`conc`) a miery absorbcie (`uptake`). 
-
-[Image of Naive Bayes Classifier model diagram]
-</p>
+        <p>Model klasifikuje typ ošetrenia (`Treatment`) na základe diskretizovaných premenných koncentrácie (`conc`) a miery absorbcie (`uptake`).</p>
 
         <h3>Vstupný kód (Python)</h3>
-        <pre id="code-display-4" class="language-python"></pre>
+        <pre><code id="code-display-4" class="language-python"></code></pre>
         
         <hr>
 
@@ -78,10 +73,10 @@
 
     <section class="code-section">
         <h2>5. ⭕ Klasifikácia: K-Najbližší Susedia (KNN)</h2>
-        <p>Model KNN klasifikuje pozorovanie podľa triedy jeho najbližších susedov v dátovom priestore. V tomto prípade je zvolené $K=2$ (dva najbližší susedia). </p>
+        <p>Model KNN klasifikuje pozorovanie podľa triedy jeho najbližších susedov v dátovom priestore. V tomto prípade je zvolené K=2.</p>
 
         <h3>Vstupný kód (Python)</h3>
-        <pre id="code-display-5" class="language-python"></pre>
+        <pre><code id="code-display-5" class="language-python"></code></pre>
         
         <hr>
 
@@ -91,10 +86,10 @@
 
     <section class="code-section">
         <h2>6. 🌊 Čistenie Dát: Predspracovanie El Niño Dát</h2>
-        <p>Tento skript pripravuje surové dáta El Niño pre analytické modely. Je zameraný na manipuláciu s chýbajúcimi hodnotami, štandardizáciu mien stĺpcov a konverziu dátových typov. </p>
+        <p>Tento skript pripravuje surové dáta El Niño pre analytické modely. Je zameraný na manipuláciu s chýbajúcimi hodnotami a konverziu typov.</p>
 
         <h3>Vstupný kód (Python/Pandas)</h3>
-        <pre id="code-display-6" class="language-python"></pre>
+        <pre><code id="code-display-6" class="language-python"></code></pre>
         
         <hr>
 
@@ -104,10 +99,10 @@
 
     <section class="code-section">
         <h2>7. ⚖️ Škálovanie Dát: Standard & Min-Max Scaling</h2>
-        <p>Škálovanie zabezpečuje, že všetky numerické vlastnosti prispievajú rovnako k výsledkom modelu. </p>
+        <p>Škálovanie zabezpečuje, že všetky numerické vlastnosti prispievajú rovnako k výsledkom modelu.</p>
 
         <h3>Vstupný kód (Python/Scikit-learn)</h3>
-        <pre id="code-display-7" class="language-python"></pre>
+        <pre><code id="code-display-7" class="language-python"></code></pre>
         
         <hr>
 
@@ -117,10 +112,10 @@
 
     <section class="code-section">
         <h2>8. 📊 Diskretizácia Dát: Rovnaké Intervaly (Equal-Width Binning)</h2>
-        <p>Táto technika prevádza kontinuálnu premennú teploty oceánu na diskrétne kategórie (koše) pre zjednodušenie analýzy. </p>
+        <p>Táto technika prevádza kontinuálnu premennú teploty oceánu na diskrétne kategórie (koše) pre zjednodušenie analýzy.</p>
 
         <h3>Vstupný kód (Python/Pandas)</h3>
-        <pre id="code-display-8" class="language-python"></pre>
+        <pre><code id="code-display-8" class="language-python"></code></pre>
         
         <hr>
 
@@ -130,10 +125,10 @@
 
     <section class="code-section">
         <h2>9. 📐 Diskretizácia Dát: Vlastné Intervaly (Custom Binning)</h2>
-        <p>Táto metóda je vhodná, keď analytik vopred vie, aké kategórie alebo prahové hodnoty sú dôležité (napr. definovanie "studenej", "normálnej" a "teplej" teploty oceánu).</p>
+        <p>Táto metóda je vhodná, keď analytik vopred vie, aké kategórie alebo prahové hodnoty sú dôležité.</p>
 
         <h3>Vstupný kód (Python/Pandas)</h3>
-        <pre id="code-display-9" class="language-python"></pre>
+        <pre><code id="code-display-9" class="language-python"></code></pre>
         
         <hr>
 
@@ -143,10 +138,10 @@
 
     <section class="code-section">
         <h2>10. 📈 Diskretizácia Dát: Kvantily (Quantile Binning)</h2>
-        <p>Táto metóda delí dáta na koše, z ktorých každý obsahuje približne rovnaký počet pozorovaní. Je ideálna pre asymetricky rozdelené dáta. </p>
+        <p>Táto metóda delí dáta na koše, z ktorých každý obsahuje približne rovnaký počet pozorovaní.</p>
 
         <h3>Vstupný kód (Python/Pandas)</h3>
-        <pre id="code-display-10" class="language-python"></pre>
+        <pre><code id="code-display-10" class="language-python"></code></pre>
         
         <hr>
 
@@ -158,6 +153,8 @@
         <p>Vyrobené s <3 pomocou GitHub Pages</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
