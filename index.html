@@ -3,20 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeeksforGeeks Style</title>
+    <title>Kompletná Dokumentácia Dátovej Analýzy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Vitajte na mojej stránke</h1>
-        <p>Sem pridajte svoj kód a spustite ho pomocou GitHub Pages!</p>
+        <h1>🔬 Dokumentácia Strojového Učenia a Predspracovania Dát</h1>
+        <p>Prehľad 10 kľúčových skriptov a analytických metód v Pythone (Pandas, Scikit-learn).</p>
     </header>
     
     <section class="code-section">
-        <h2>Váš kód</h2>
-        <textarea id="code" rows="10" cols="80" placeholder="Sem vložte svoj kód..."></textarea>
-        <button id="runCode">Spustiť Kód</button>
-        <div id="output"></div>
+        <h2>1. 📊 Jednoduchá Lineárna Regresia: Plat vs. Skúsenosti</h2>
+        <p>Model Lineárnej Regresie na predpovedanie platu (Salary) na základe rokov skúseností (YearsExperience).</p>
+
+        <h3>Vstupný kód (Python)</h3>
+        <pre id="code-display" class="language-python"></pre>
+        
+        <hr>
+
+        <h2>Výsledky a Interpretácia</h2>
+        <div id="output-display" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>2. 🗺️ Viacnásobná Lineárna Regresia: Predikcia miery vražednosti</h2>
+        <p>Model predpovedá mieru vražednosti (Murder) na základe štyroch premenných: Illiteracy, Life.Exp, Population a Income.</p>
+
+        <h3>Vstupný kód (Python)</h3>
+        <pre id="code-display-2" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky a Vyhodnotenie (Metriky chýb)</h3>
+        <div id="output-display-2" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>3. 🌳 Klasifikácia: Rozhodovací Strom (Decision Tree)</h2>
+        <p>Model slúži na klasifikáciu typu ošetrenia (`Treatment`) na základe koncentrácie CO2 (`conc`), miery absorbcie (`uptake`) a typu rastliny. 
+
+[Image of Decision Tree structure]
+</p>
+
+        <h3>Vstupný kód (Python)</h3>
+        <pre id="code-display-3" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Predspracovanie: One-Hot Encoding</h3>
+        <div id="preprocessing-output-3" class="output-block"></div>
+
+        <h3>Výsledky Modelu a Metriky</h3>
+        <div id="output-display-3" class="output-block"></div>
+    </section>
+    
+    <section class="code-section">
+        <h2>4. 📐 Klasifikácia: Naívny Bayesov Klasifikátor (GaussianNB)</h2>
+        <p>Model klasifikuje typ ošetrenia (`Treatment`) na základe diskretizovaných premenných koncentrácie (`conc`) a miery absorbcie (`uptake`). 
+
+[Image of Naive Bayes Classifier model diagram]
+</p>
+
+        <h3>Vstupný kód (Python)</h3>
+        <pre id="code-display-4" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Predspracovanie: Diskretizácia (Q-cut)</h3>
+        <div id="preprocessing-output-4" class="output-block"></div>
+
+        <h3>Výsledky Modelu a Metriky</h3>
+        <div id="output-display-4" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>5. ⭕ Klasifikácia: K-Najbližší Susedia (KNN)</h2>
+        <p>Model KNN klasifikuje pozorovanie podľa triedy jeho najbližších susedov v dátovom priestore. V tomto prípade je zvolené $K=2$ (dva najbližší susedia). </p>
+
+        <h3>Vstupný kód (Python)</h3>
+        <pre id="code-display-5" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky Modelu a Metriky</h3>
+        <div id="output-display-5" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>6. 🌊 Čistenie Dát: Predspracovanie El Niño Dát</h2>
+        <p>Tento skript pripravuje surové dáta El Niño pre analytické modely. Je zameraný na manipuláciu s chýbajúcimi hodnotami, štandardizáciu mien stĺpcov a konverziu dátových typov. </p>
+
+        <h3>Vstupný kód (Python/Pandas)</h3>
+        <pre id="code-display-6" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky Kontroly Dát</h3>
+        <div id="output-display-6" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>7. ⚖️ Škálovanie Dát: Standard & Min-Max Scaling</h2>
+        <p>Škálovanie zabezpečuje, že všetky numerické vlastnosti prispievajú rovnako k výsledkom modelu. </p>
+
+        <h3>Vstupný kód (Python/Scikit-learn)</h3>
+        <pre id="code-display-7" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Metódy Škálovania a Výstup</h3>
+        <div id="output-display-7" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>8. 📊 Diskretizácia Dát: Rovnaké Intervaly (Equal-Width Binning)</h2>
+        <p>Táto technika prevádza kontinuálnu premennú teploty oceánu na diskrétne kategórie (koše) pre zjednodušenie analýzy. </p>
+
+        <h3>Vstupný kód (Python/Pandas)</h3>
+        <pre id="code-display-8" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky Diskretizácie</h3>
+        <div id="output-display-8" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>9. 📐 Diskretizácia Dát: Vlastné Intervaly (Custom Binning)</h2>
+        <p>Táto metóda je vhodná, keď analytik vopred vie, aké kategórie alebo prahové hodnoty sú dôležité (napr. definovanie "studenej", "normálnej" a "teplej" teploty oceánu).</p>
+
+        <h3>Vstupný kód (Python/Pandas)</h3>
+        <pre id="code-display-9" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky Diskretizácie s Vlastnými Intervalmi</h3>
+        <div id="output-display-9" class="output-block"></div>
+    </section>
+
+    <section class="code-section">
+        <h2>10. 📈 Diskretizácia Dát: Kvantily (Quantile Binning)</h2>
+        <p>Táto metóda delí dáta na koše, z ktorých každý obsahuje približne rovnaký počet pozorovaní. Je ideálna pre asymetricky rozdelené dáta. </p>
+
+        <h3>Vstupný kód (Python/Pandas)</h3>
+        <pre id="code-display-10" class="language-python"></pre>
+        
+        <hr>
+
+        <h3>Výsledky Diskretizácie Kvantilmi</h3>
+        <div id="output-display-10" class="output-block"></div>
     </section>
 
     <footer>
