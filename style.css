@@ -1,57 +1,98 @@
+/* Globálne nastavenia */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Hlavička */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #2c3e50; /* Tmavá farba ako v profesionálnych dokumentáciách */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+    border-bottom: 5px solid #1abc9c; /* Zvýrazňujúca farba */
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
+header p {
+    margin-top: 5px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Sekcia s kódom */
 .code-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-textarea {
+.code-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Kódové bloky pre zobrazenie */
+pre {
     width: 100%;
-    font-family: Consolas, monospace;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #2e3440; /* Tmavé pozadie pre kód (Nord-like) */
+    color: #eceff4; /* Svetlý text */
+    border-radius: 6px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    overflow-x: auto; /* Ak je riadok príliš dlhý */
+}
+
+/* Styling pre výstup a interpretáciu */
+.output-block {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #f0f4f7; /* Svetlé pozadie pre text výstupu */
+    border: 1px solid #d8dee9;
+    border-left: 5px solid #88c0d0; /* Modrý okraj na zvýraznenie */
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.output-block pre {
+    /* Štýl pre konzolový výstup vnútri output-block */
+    background: #e5e9f0;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #4c566a;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+.output-block ul {
+    margin-top: 15px;
 }
 
-button:hover {
-    background-color: #45a049;
+.output-block ul li {
+    margin-bottom: 5px;
 }
 
+
+/* Pätička */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9em;
 }
